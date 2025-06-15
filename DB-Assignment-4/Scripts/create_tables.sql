@@ -1,15 +1,15 @@
 CREATE DATABASE assignment4;
 USE assignment4;
 
-
 CREATE TABLE athletes (
     athlete_id INT PRIMARY KEY AUTO_INCREMENT,
     competitor VARCHAR(255) NOT NULL,
     dob DATE,
     nationality VARCHAR(100),
-    sex ENUM('M', 'F') NOT NULL,
+    sex VARCHAR(10) NOT NULL,
     UNIQUE (competitor, dob, nationality, sex)
 )COMMENT='List of athletes';
+
 
 CREATE TABLE disciplines (
     discipline_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -23,9 +23,9 @@ CREATE TABLE disciplines (
 CREATE TABLE venues (
     venue_id INT PRIMARY KEY AUTO_INCREMENT,
     venue VARCHAR(255) NOT NULL,
-    venue_country VARCHAR(100),
-    UNIQUE (venue, venue_country)
+    venue_country VARCHAR(100)
 )COMMENT='Locations where events are held';
+
 
 CREATE TABLE results (
     result_id BIGINT PRIMARY KEY AUTO_INCREMENT,
