@@ -39,8 +39,7 @@ CREATE TABLE results (
     date DATE,
     mark_numeric FLOAT,
     result_score FLOAT,
-    season YEAR,
-    age_at_event INT CHECK (age_at_event >= 0),
+    season YEAR,    age_at_event INT CHECK (age_at_event >= 0),
     FOREIGN KEY (athlete_id) REFERENCES athletes(athlete_id),
     FOREIGN KEY (venue_id) REFERENCES venues(venue_id),
     FOREIGN KEY (discipline_id) REFERENCES disciplines(discipline_id),
@@ -48,3 +47,30 @@ CREATE TABLE results (
     INDEX idx_discipline (discipline_id),
     INDEX idx_venue (venue_id)
 )COMMENT='Event results';
+
+CREATE TABLE coaches (
+    coach_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255),
+    nationality VARCHAR(100)
+);
+
+CREATE TABLE discipline_coach (
+    discipline_id INT,
+    coach_id INT,
+    PRIMARY KEY (discipline_id, coach_id),
+    FOREIGN KEY (discipline_id) REFERENCES disciplines(discipline_id),
+    FOREIGN KEY (coach_id) REFERENCES coaches(coach_id)
+);
+
+CREATE TABLE athlete_passports (
+    passport_id INT PRIMARY KEY AUTO_INCREMENT,
+    athlete_id INT UNIQUE,
+    passport_number VARCHAR(50) NOT NULL UNIQUE,
+    issued_country VARCHAR(100),
+    issue_date DATE,
+    expiry_date DATE,
+    FOREIGN KEY (athlete_id) REFERENCES athletes(athlete_id)
+);
+
+
+
