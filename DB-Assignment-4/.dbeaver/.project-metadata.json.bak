@@ -1,1 +1,1 @@
-{"resources":{}}
+{"resources":{"Scripts/create_tables.sql":{"default-datasource":"mysql8-1977476e114-5dc95dacd09c612"},"Scripts/users.sql":{"default-datasource":"mysql8-1977476e114-5dc95dacd09c612"}}}
