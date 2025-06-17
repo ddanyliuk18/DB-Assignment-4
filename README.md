@@ -1,6 +1,6 @@
 # 🏅 DB-Assignment-4 — Olympic World Committee Database
 
-## 📘 Project Description
+##  Project Description
 
 This database models an information system for the **Olympic World Committee**, used to collect, track, and analyze sports results, athlete participation, competition venues, coaching assignments, and athlete identification documents.
 
@@ -16,7 +16,7 @@ This system addresses the following tasks:
 - Linking coaches to specific disciplines.
 - Storing passport data to verify athlete eligibility and compliance.
 
-## 🗂 Database Structure
+##  Database Structure
 
 - `athletes`: contains personal information about athletes.
 - `disciplines`: contains normalized names of sport disciplines.
@@ -34,7 +34,7 @@ This system addresses the following tasks:
 - `news_agent`: read-only access to the `results` table.
 - `lawyer`: read-only access to the `athlete_passports` table.
 
-## 📊 Sample SQL View
+##  Sample SQL View
 
 ```sql
 CREATE VIEW top_athletes AS
