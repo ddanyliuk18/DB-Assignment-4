@@ -34,7 +34,7 @@ This system addresses the following tasks:
 - `news_agent`: read-only access to the `results` table.
 - `lawyer`: read-only access to the `athlete_passports` table.
 
-##  Sample SQL View
+##  SQL View
 
 ```sql
 CREATE VIEW top_athletes AS
