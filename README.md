@@ -1,5 +1,4 @@
-# DB-Assignment-4
-# 🏅 README — Olympic World Committee Database
+# 🏅 DB-Assignment-4 — Olympic World Committee Database
 
 ## 📘 Project Description
 
