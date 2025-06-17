@@ -33,7 +33,7 @@ This system addresses the following tasks:
 | `athletes` → `results`                               | 1\:N | One athlete can have many results.               |
 | `disciplines` → `results`                            | 1\:N | One discipline appears in many results.          |
 | `venues` → `results`                                 | 1\:N | One venue hosts many results.                    |
-| `athletes` → `athlete_passports`                     | 1\:N | One athlete can have multiple passports.         |
+| `athletes` → `athlete_passports`                     | 1\:1 | One athlete can have one passport.               |
 | `disciplines` ↔ `coaches` *(via `discipline_coach`)* | M\:N | Many coaches can train many disciplines.         |
 | `coaches` ↔ `disciplines` *(via `discipline_coach`)* | M\:N | Many disciplines can be coached by many coaches. |
 
