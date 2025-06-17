@@ -26,8 +26,8 @@ This system addresses the following tasks:
 - `discipline_coach`: many-to-many relationship between coaches and disciplines.
 - `athlete_passports`: stores sensitive athlete passport information.
 
-  ![Untitled (1)](https://github.com/user-attachments/assets/70213e1a-e1a9-43ea-b16b-d261eb1b9cc9)
-
+![Untitled (2)](https://github.com/user-attachments/assets/9c9277a0-30ad-497a-bcce-a857756e07d2)
+  
 ## 🔐 User Roles
 
 - `admin`: full access to all tables.
