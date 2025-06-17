@@ -9,6 +9,7 @@ END$$
 DELIMITER ;
 
 
+
 DELIMITER $$
 
 CREATE TRIGGER set_default_position
