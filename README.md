@@ -37,6 +37,17 @@ This system addresses the following tasks:
 | `disciplines` ↔ `coaches` *(via `discipline_coach`)* | M\:N | Many coaches can train many disciplines.         |
 | `coaches` ↔ `disciplines` *(via `discipline_coach`)* | M\:N | Many disciplines can be coached by many coaches. |
 
+
+# This system is primarily an OLTP (Online Transaction Processing) system.
+
+- Frequent Inserts and Updates: Designed to collect and store a high volume of athlete results over time.
+
+- Normalized Structure: Avoids redundancy, ensures data consistency.
+
+- Transactional Use: Supports individual inserts (e.g., recording a result) and quick retrieval by keys (e.g., finding athlete data).
+
+- Real-Time Operations: Suitable for applications that require current data, like dashboards or competition tracking.
+
   
 ## 🔐 User Roles
 
