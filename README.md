@@ -27,6 +27,16 @@ This system addresses the following tasks:
 - `athlete_passports`: stores sensitive athlete passport information.
 
 ![Untitled (2)](https://github.com/user-attachments/assets/9c9277a0-30ad-497a-bcce-a857756e07d2)
+
+| Relationship                                         | Type | Description                                      |
+| ---------------------------------------------------- | ---- | ------------------------------------------------ |
+| `athletes` → `results`                               | 1\:N | One athlete can have many results.               |
+| `disciplines` → `results`                            | 1\:N | One discipline appears in many results.          |
+| `venues` → `results`                                 | 1\:N | One venue hosts many results.                    |
+| `athletes` → `athlete_passports`                     | 1\:N | One athlete can have multiple passports.         |
+| `disciplines` ↔ `coaches` *(via `discipline_coach`)* | M\:N | Many coaches can train many disciplines.         |
+| `coaches` ↔ `disciplines` *(via `discipline_coach`)* | M\:N | Many disciplines can be coached by many coaches. |
+
   
 ## 🔐 User Roles
 
