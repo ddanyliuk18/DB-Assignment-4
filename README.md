@@ -38,7 +38,7 @@ This system addresses the following tasks:
 | `coaches` ↔ `disciplines` *(via `discipline_coach`)* | M\:N | Many disciplines can be coached by many coaches. |
 
 
-# This system is primarily an OLTP (Online Transaction Processing) system.
+## This system is primarily an OLTP (Online Transaction Processing) system
 
 - Frequent Inserts and Updates: Designed to collect and store a high volume of athlete results over time.
 
